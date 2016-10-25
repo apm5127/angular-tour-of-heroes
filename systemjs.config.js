@@ -29,7 +29,7 @@
 		// packages tells the system loader how to load when no filename and/or extension
 		packages: {
 			app: {
-				main: './main.js',
+				main: '../app.build/main.js',
 				defaultExtension: 'js'
 			},
 			rxjs: {
