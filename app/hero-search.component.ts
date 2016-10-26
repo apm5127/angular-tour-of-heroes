@@ -9,8 +9,8 @@ import { Hero } from './hero';
 @Component({
 	moduleId: module.id,
 	selector: 'hero-search',
-	templateUrl: 'hero-search.component.html',
-	styleUrls: ['hero-search.component.css'],
+	templateUrl: '../app.templates/hero-search.component.html',
+	styleUrls: ['../app.styles/hero-search.component.css'],
 	providers: [HeroSearchService]
 })
 export class HeroSearchComponent implements OnInit {
