@@ -25,7 +25,7 @@ export class HeroDetailComponent implements OnInit {
 		this.route
 			.params
 			.forEach((params: Params) => {
-				let id = +params['id'];
+				let id = +params['id']; // converts string to number with JS '+' operator
 				this.heroService
 					.getHero(id)
 					.then(hero => this.hero = hero);
@@ -37,6 +37,6 @@ export class HeroDetailComponent implements OnInit {
 	save(): void {
 		this.heroService
 			.update(this.hero)
-			.then(() => this.goBack);
+			.then(() => this.goBack());
 	}
 }
